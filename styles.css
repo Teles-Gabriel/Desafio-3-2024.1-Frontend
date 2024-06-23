@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+.container {
+    width: 1050px;
+    height: 586px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #FF731A;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.deader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #FF731A;
+    border-radius: 5px;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    align-items: start;
+    border-right: 4px solid #FF731A;
+}
+
+.title {
+    width: 1306px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #FF731A;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+
+}
+.subtitle {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 20px 0;
+    color: #FF731A;
+}
+.select-container {
+    margin: 2px 0;
+    margin-bottom: 40px;
+}
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #d9d9d9;
+    width: 413px;
+    text-align: center;
+}
+.municipios {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.municipios::-webkit-scrollbar {
+    width: 10px;
+}
+.municipios::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.municipios::-webkit-scrollbar-thumb {
+    background: #FF731A;
+    border-radius: 10px;
+}
+.municipios::-webkit-scrollbar-thumb:hover {
+    background: #FF731A;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 75px;
+    min-height: 100%;
+    align-content: center;
+}
+
+.column:not(:first-child) {
+    border-left: 1px solid #FF731A;
+}
+
+.municipio {
+    margin: 5px 0;
+}
